@@ -795,8 +795,8 @@
     ],
     "description": "Salla is an ecommerce platform specifically tailored to serve businesses and customers in Saudi Arabia.",
     "headers": {
-      "x-powered-by": "^Salla$",
-      "X-Frame-Options": "\\.salla\\.sa"
+      "X-Frame-Options": "\\.salla\\.sa",
+      "x-powered-by": "^Salla$"
     },
     "icon": "Salla.svg",
     "js": {
@@ -1767,6 +1767,19 @@
     "scriptSrc": "sib(?:automation|forms)\\.com/",
     "website": "https://www.sendinblue.com"
   },
+  "Sendlane": {
+    "cats": [
+      32
+    ],
+    "description": "Sendlane is an email and sms marketing platform for online businesses",
+    "icon": "Sendland.png",
+    "js": {
+      "_Sendlane": ""
+    },
+    "saas": true,
+    "scriptSrc": "sendlane\\.com/scripts/pusher\\.js",
+    "website": "https://www.sendlane.com/"
+  },
   "Sensors Data": {
     "cats": [
       10
@@ -2310,9 +2323,9 @@
     "js": {
       "ShopifyPay.apiHost": ""
     },
-    "requires": "Shopify",
     "scriptSrc": [
-      "cdn\\.shopify\\.com/shopifycloud/shopify_pay/"
+      "cdn\\.shopify\\.com/shopifycloud/shopify_pay/",
+      "cdn\\.shopify\\.com/shopifycloud/shopify-js/shop-pay-payment-request\\.js"
     ],
     "website": "https://shop.app"
   },
@@ -2327,7 +2340,6 @@
       "Affirm",
       "Shop Pay"
     ],
-    "requires": "Shopify",
     "website": "https://shoppay.affirm.com"
   },
   "ShopBase": {
@@ -2521,7 +2533,8 @@
   },
   "Shopify": {
     "cats": [
-      6
+      6,
+      1
     ],
     "cookies": {
       "_shopify_s": "",
@@ -2587,11 +2600,9 @@
       100
     ],
     "description": "Shopify Chat is Shopify's native live chat function that allows you to have real-time conversations with customers visiting your Shopify store.",
+    "dom": "div#shopify-chat",
     "icon": "Shopify.svg",
     "implies": "Shopify",
-    "scriptSrc": [
-      "cdn\\.shopify\\.com/shopifycloud/shopify_chat/"
-    ],
     "website": "https://www.shopify.com/inbox"
   },
   "Shopify Consent Management": {
@@ -4141,6 +4152,23 @@
     "scriptSrc": "/wp-content/plugins/revslider/",
     "website": "https://www.sliderrevolution.com"
   },
+  "Slim SEO": {
+    "cats": [
+      87
+    ],
+    "description": "Slim SEO is a full-featured SEO plugin for WordPress that's lightweight, blazing fast with minimum configuration.",
+    "dom": "#slim-seo-schema",
+    "icon": "Slim-SEO.svg",
+    "oss": true,
+    "pricing": [
+      "low",
+      "freemium",
+      "onetime",
+      "recurring"
+    ],
+    "requires": "WordPress",
+    "website": "https://wpslimseo.com"
+  },
   "Slimbox": {
     "cats": [
       59
@@ -5113,10 +5141,10 @@
     "cats": [
       87
     ],
-    "description": "Spectra is a WordPress plugin that provides a collection of new and enhanced blocks for the Gutenberg editor.",
+    "description": "Spectra is a WordPress plugin that provides a collection of new and enhanced blocks for the WordPress Block editor.",
     "dom": "link[href*='/wp-content/plugins/ultimate-addons-for-gutenberg/']",
     "icon": "Spectra.svg",
-    "implies": "Gutenberg",
+    "implies": "WordPress Block Editor",
     "pricing": [
       "freemium",
       "low",
@@ -5125,6 +5153,19 @@
     "requires": "WordPress",
     "scriptSrc": "/wp-content/plugins/ultimate-addons-for-gutenberg/.+\\.js(?:\\?ver=(\\d+(?:\\.\\d+)+))?\\;version:\\1",
     "website": "https://wpspectra.com"
+  },
+  "Speculative Loading": {
+    "cats": [
+      87,
+      92
+    ],
+    "description": "Performance plugin from the WordPress Performance Group, which adds support for the Speculation Rules API, by which certain URLs are dynamically prefetched or prerendered based on user interaction.",
+    "icon": "speculation-rules.svg",
+    "meta": {
+      "generator": "^speculation-rules ([\\d.]+)?\\;version:\\1"
+    },
+    "requires": "WordPress",
+    "website": "https://wordpress.org/plugins/speculation-rules/"
   },
   "Speed Kit": {
     "cats": [
@@ -5891,8 +5932,7 @@
   },
   "Stackable": {
     "cats": [
-      87,
-      51
+      87
     ],
     "description": "Stackable is a plugin for WordPress that offers a collection of blocks, templates, and other design tools to help users create custom, professional-looking websites.",
     "dom": {
@@ -5903,7 +5943,7 @@
       }
     },
     "icon": "Stackable.svg",
-    "implies": "Gutenberg",
+    "implies": "WordPress Block Editor",
     "js": {
       "stackable.restUrl": "",
       "stackableAnimations": ""
@@ -6928,6 +6968,9 @@
     "description": "Svelte is a free and open-source front end compiler created by Rich Harris and maintained by the Svelte core team members.",
     "dom": "[class*='svelte-']",
     "icon": "Svelte.svg",
+    "js": {
+      "__svelte": ""
+    },
     "oss": true,
     "website": "https://svelte.dev"
   },
@@ -7081,11 +7124,19 @@
       59
     ],
     "description": "Swiper is a JavaScript library that creates modern touch sliders with hardware-accelerated transitions.",
-    "dom": "div[data-swiper-slide-index], [swiper-container]",
+    "dom": [
+      "div[data-swiper-slide-index]",
+      "swiper-container",
+      "swiper-slide",
+      "div.swiper-wrapper",
+      "div.swiper-initialized",
+      "div.swiper-vertical"
+    ],
     "icon": "Swiper.svg",
     "js": {
       "Swiper": ""
     },
+    "oss": true,
     "scriptSrc": "swiper(?:\\.min)?\\.js",
     "website": "https://swiperjs.com"
   },

@@ -324,7 +324,8 @@
   },
   "Magento": {
     "cats": [
-      6
+      6,
+      1
     ],
     "cookies": {
       "X-Magento-Vary": "",
@@ -2322,6 +2323,19 @@
     },
     "website": "https://github.com/mochi/mochiweb"
   },
+  "Modern Image Formats": {
+    "cats": [
+      87,
+      92
+    ],
+    "description": "Performance plugin from the WordPress Performance Group, which adds support for outputting images in WebP or AVIF format and supports the `picture` element to enable format fallbacks.",
+    "icon": "modern-image-formats.svg",
+    "meta": {
+      "generator": "^webp-uploads ([\\d.]+)?\\;version:\\1"
+    },
+    "requires": "WordPress",
+    "website": "https://wordpress.org/plugins/webp-uploads/"
+  },
   "Modernizr": {
     "cats": [
       59
@@ -2588,6 +2602,17 @@
     "icon": "Mongrel.png",
     "implies": "Ruby",
     "website": "https://mongrel2.org"
+  },
+  "Monkcommerce": {
+    "cats": [
+      6
+    ],
+    "description": "Monk Commerce is a software-as-a-service that aims to increase income for small e-commerce businesses by deploying AOV boosting techniques like cart and post-purchase offers",
+    "icon": "Monk.svg",
+    "scriptSrc": [
+      "js\\.monkcommerce\\.app"
+    ],
+    "website": "https://monkcommerce.com/"
   },
   "Monkey HTTP Server": {
     "cats": [

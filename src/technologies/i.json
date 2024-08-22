@@ -301,6 +301,32 @@
     "scriptSrc": "template-assets\\.iluria\\.com/commons/",
     "website": "https://www.iluria.com.br"
   },
+  "Image Placeholders": {
+      "cats": [
+      87,
+      92
+    ],
+    "description": "Performance plugin from the WordPress Performance Group, which determines and stores the dominant color for newly uploaded images in the media library, then uses that as a placeholder background during front end image loads.",
+    "icon": "dominant-color-images.svg",
+    "meta": {
+      "generator": "^dominant-color-images ([\\d.]+)?\\;version:\\1"
+    },
+    "requires": "WordPress",
+    "website": "https://wordpress.org/plugins/dominant-color-images/"
+  },
+  "Image Prioritizer": {
+    "cats": [
+      87,
+      92
+    ],
+    "description": "Performance plugin from the WordPress Performance Group, which optimizes the loading of images which are the LCP (Largest Contentful Paint) element, including both img elements and elements with CSS background images.",
+    "icon": "image-prioritizer.svg",
+    "meta": {
+      "generator": "^image-prioritizer ([\\d.]+)?\\;version:\\1"
+    },
+    "requires": "WordPress",
+    "website": "https://wordpress.org/plugins/image-prioritizer/"
+  },
   "Image Relay": {
     "cats": [
       95
@@ -1208,6 +1234,18 @@
     ],
     "website": "https://isotope.metafizzy.co"
   },
+  "Isso": {
+    "cats": [
+      15
+    ],
+    "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
+    "implies": "Python",
+    "js": {
+      "Isso.fetchComments": ""
+    },
+    "oss": true,
+    "website": "https://github.com/posativ/isso/"
+  },
   "Issuu": {
     "cats": [
       19,
@@ -1228,18 +1266,6 @@
     "saas": true,
     "scriptSrc": "\\.issuu\\.com/",
     "website": "https://issuu.com"
-  },
-  "Isso": {
-    "cats": [
-      15
-    ],
-    "description": "Isso is a lightweight commenting server written in Python and JavaScript, referred to as \"Ich schrei sonst\" in German.",
-    "js": {
-      "Isso.fetchComments": ""
-    },
-    "implies": "Python",
-    "oss": true,
-    "website": "https://github.com/posativ/isso/"
   },
   "Iterable": {
     "cats": [

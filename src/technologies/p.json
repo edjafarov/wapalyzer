@@ -393,6 +393,16 @@
     "scriptSrc": "\\.getpaloma\\.com/",
     "website": "https://www.getpaloma.com"
   },
+  "Panda CSS": {
+    "cats": [
+      66
+    ],
+    "css": "--made-with-panda",
+    "description": "Panda is a styling engine that generates styling primitives to author atomic CSS and recipes in a type-safe and readable manner.",
+    "icon": "PandaCSS.svg",
+    "oss": true,
+    "website": "https://panda-css.com/"
+  },
   "Panelbear": {
     "cats": [
       10,
@@ -1089,10 +1099,23 @@
     "description": "Performance plugin from the WordPress Performance Group, which is a collection of standalone performance modules.",
     "icon": "Performance Lab.svg",
     "meta": {
-      "generator": "^Performance Lab ?([\\d.]+)?\\;version:\\1"
+      "generator": "^(Performance Lab|performance-lab) ?([\\d.]+)?\\;version:\\2"
     },
     "requires": "WordPress",
     "website": "https://wordpress.org/plugins/performance-lab/"
+  },
+  "Performant Translations": {
+    "cats": [
+      87,
+      92
+    ],
+    "description": "Performance plugin from the WordPress Performance Group, which makes internationalization/localization in WordPress faster than ever before.",
+    "icon": "performant-translations.svg",
+    "meta": {
+      "generator": "^performant-translations ([\\d.]+)?\\;version:\\1"
+    },
+    "requires": "WordPress",
+    "website": "https://wordpress.org/plugins/performant-translations/"
   },
   "PerimeterX": {
     "cats": [
@@ -2765,7 +2788,8 @@
   },
   "PrestaShop": {
     "cats": [
-      6
+      6,
+      1
     ],
     "cookies": {
       "PrestaShop": ""
@@ -3369,6 +3393,20 @@
     },
     "oss": true,
     "website": "https://github.com/mroderick/PubSubJS"
+  },
+  "PubTech": {
+    "cats": [
+      67
+    ],
+    "description": "PubTech is a consent management platform helping brands and businesses collect, store and leverage their customer consents.",
+    "icon": "PubTech.png",
+    "js": {
+      "__pub_tech_cmp_config": ""
+    },
+    "scriptSrc": [
+      "pubtech-cmp-v(.+?)(?:-esm)?\\.js;version:\\1"
+    ],
+    "website": "https://www.pubtech.ai/"
   },
   "Public CMS": {
     "cats": [
